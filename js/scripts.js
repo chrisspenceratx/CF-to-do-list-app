@@ -1,5 +1,6 @@
 function newItem() {
 
+  // Add inputValue to list //
     let li = $('<li></li>');
     let inputValue = $('#input').val();
     li.append(inputValue);
@@ -11,17 +12,17 @@ function newItem() {
     $('#list').append(li); 
     }
   
-    
+  // Crossing item out function, tied to "strike" class //
     function crossOut() {
     li.toggleClass("strike");
     }
 
-    
+  // ClickEvent done in jQuery //
     li.on("dblclick", function crossOut() {
       li.toggleClass("strike");
     });
 
-    
+  // Adding a delete button //
     let crossOutButton = $("<crossOutButton></crossOutButton>");
     crossOutButton.append(document.createTextNode("X"));
     li.append(crossOutButton);  
