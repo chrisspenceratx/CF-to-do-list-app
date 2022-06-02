@@ -6,6 +6,7 @@ function newItem() {
     li.append(inputValue);
       
     
+    
     if (inputValue === '') {
     alert("You must write something!");
     } else {
