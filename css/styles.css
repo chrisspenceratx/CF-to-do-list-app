@@ -42,6 +42,7 @@ ol li {padding: 5px;color:#000;}
 
 ol li:nth-child(even){background: #dfdfdf;}
 
+/* Cross out item CSS class below.. */
 .strike{text-decoration: line-through;}
 
 li:hover{
